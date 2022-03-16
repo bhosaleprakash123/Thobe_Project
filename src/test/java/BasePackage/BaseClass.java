@@ -22,6 +22,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Utility.CustomListener;
+import Utility.MapDataConfig;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -40,7 +41,7 @@ public class BaseClass {
 		String exReport = System.getProperty("user.dir") + "/Report/"+"Reports.html";
 		extentReports = new ExtentReports(exReport, true);
 		excel = new Utility.ExcelDataConfig("D:\\Extent\\Ezzar_Login.xlsx");
-		
+		MapDataConfig.integrationTest();
 	}
 	@BeforeMethod
 	public static void openBrowser() throws Exception {
