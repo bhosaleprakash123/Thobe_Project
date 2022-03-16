@@ -21,6 +21,8 @@ public class MapDataConfig {
 	public static XSSFSheet sh1;
 	public static Map<Object, Object> mapData;
 	public Object[][] arr;
+	public static String[] key;
+	public static String[] value;
 	public static Map<Object, Object> getMapData(){
 		try {
 			 mapData=new LinkedHashMap<Object, Object>();
@@ -52,25 +54,21 @@ public class MapDataConfig {
 		return mapData;
 		
 	}
-	@Test()
-	public void integrationTest() {
+	public static void integrationTest() {
 		System.out.println("-------------Test case started ----------------");
-		Map<Object,Object> testdata=getMapData();
+		Map<Object,Object> testdata=MapDataConfig.getMapData();
 		//Map<Object,Object> testDataInMap=ExcelUtility.getMapData();
 		
 		
 		Object[][] arr = new Object[mapData.size()][2];
 		arr[0][0] = mapData;
 		// get an array of keys of the `HashMap`
-		String[] key = testdata.keySet().toArray(new String[2]);
+		key = testdata.keySet().toArray(new String[2]);
 		System.out.println(Arrays.toString(key));
 		// get an array of values of the `HashMap`
-        String[] value = testdata.values().toArray(new String[2]);
+        value = testdata.values().toArray(new String[2]);
         System.out.println(Arrays.toString(value));
        
-        System.out.println(testdata.get(0));
-		System.out.println(testdata.get(0));
-		System.out.println(testdata.get(0));
 		 System.out.println("-------------Test case Ended ----------------");
 	}
 	
