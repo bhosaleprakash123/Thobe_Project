@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Thobe_Project by packages]">
+  <test name="TestCase(failed)">
+    <classes>
+      <class name="TestCase.SignIn">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="login_Page"/>
+        </methods>
+      </class> <!-- TestCase.SignIn -->
+      <class name="TestCase.SignOut">
+        <methods>
+          <include name="login_Page"/>
+          <include name="logOut_Page"/>
+        </methods>
+      </class> <!-- TestCase.SignOut -->
+    </classes>
+  </test> <!-- TestCase(failed) -->
+</suite> <!-- Failed suite [Thobe_Project by packages] -->

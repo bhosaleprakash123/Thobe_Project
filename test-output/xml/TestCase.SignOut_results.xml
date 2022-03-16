@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Default test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="4"
+           time="0.010">
+  <properties />
+  
+            <testcase name="getResult" time="0.0" classname="TestCase.SignOut">
+          <skipped />
+    </testcase>
+            <testcase name="getResult" time="0.0" classname="TestCase.SignOut">
+          <skipped />
+    </testcase>
+            <testcase name="logOut_Page" time="0.0" classname="TestCase.SignOut">
+          <skipped />
+    </testcase>
+            <testcase name="login_Page" time="0.0" classname="TestCase.SignOut">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ezzar_APPlication]" parallel="none">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="Utility.CustomListener"/>
+  </listeners>
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="TestCase.CreateAPP">
+        <methods>
+          <include name="create_page"/>
+          <include name="openBrowser"/>
+          <include name="login_Page"/>
+        </methods>
+      </class> <!-- TestCase.CreateAPP -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Ezzar_APPlication] -->
