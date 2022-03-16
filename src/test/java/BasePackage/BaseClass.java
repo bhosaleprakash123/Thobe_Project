@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -43,7 +44,7 @@ public class BaseClass {
 		excel = new Utility.ExcelDataConfig("D:\\Extent\\Ezzar_Login.xlsx");
 		MapDataConfig.integrationTest();
 	}
-	@BeforeMethod
+	@BeforeClass
 	public static void openBrowser() throws Exception {
 		
 		//extentTest=extentReports.startTest("captureScreenShot");

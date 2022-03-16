@@ -9,7 +9,7 @@
   </listeners>
    <test name="Ezzar_Result">
     <classes>
-      <class name="TestCase.SignIn">
+      <class name="TestCase.PIM">
       </class>
       
     </classes>
