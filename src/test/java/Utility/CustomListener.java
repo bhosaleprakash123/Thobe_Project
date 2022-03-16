@@ -26,7 +26,7 @@ public class CustomListener extends TestListenerAdapter {
 		File scrFile = ((TakesScreenshot)SignIn.driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		try {
-			FileUtils.copyFile(scrFile, new File("D:\\Extent\\Fail_TCScreenShot\\"+tr.getName()+".png"));
+			FileUtils.copyFile(scrFile, new File("D:\\Extent\\Fail_TCScreenShot"+tr.getName()+".png"));
 			System.out.println("Succesfully Captured screenshot");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -42,7 +42,7 @@ public class CustomListener extends TestListenerAdapter {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		//after execution, you could see a folder "FailedScreenshots" under src folder
-		String destination = System.getProperty("user.dir") + "/FailedScreenshot/"+screenshotname+dateName+".png";
+		String destination = System.getProperty("user.dir") + "/Screenshot/"+screenshotname+dateName+".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;

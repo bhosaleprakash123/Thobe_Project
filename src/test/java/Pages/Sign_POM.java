@@ -9,17 +9,17 @@ public class Sign_POM {
 	public static WebElement element;
 	public static WebElement userName(WebDriver driver)
 	{
-		element=driver.findElement(By.xpath("//*[@id='login']/div[1]/input"));
+		element=driver.findElement(By.xpath("//*[@id=\"txtUsername\"]"));
 		return element;
 	}
 	public static WebElement Password(WebDriver driver)
 	{
-		element=driver.findElement(By.xpath("//input[@name='password']"));
+		element=driver.findElement(By.xpath("//*[@id=\"txtPassword\"]"));
 		return element;
 	}
 	public static WebElement click_Login(WebDriver driver)
 	{
-		element=driver.findElement(By.xpath("//input[@name='login']"));
+		element=driver.findElement(By.xpath("//*[@id=\"btnLogin\"]"));
 		return element;
 	}
 	public static WebElement click_SwitchClassic(WebDriver driver)
